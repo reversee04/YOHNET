@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row" style="background-color: rgb(40, 41, 104);">
+            <div class="col-8">
+                <h1 class="text-sm-start fs-5 text-white">YOHNET</h1>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <a href=""><i class="bi bi-facebook text-white p-2"></i></a>
+                <a href=""><i class="bi bi-linkedin text-white p-2"></i></a>
+                <a href=""><i class="bi bi-instagram text-white p-2"></i></a>
+                <a href=""><i class="bi bi-twitter-x text-white p-2"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./photos/logo.jpeg" alt="logo Here" width="150" height="auto">
+            </a>
+            <!-- button for menu in mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="aboutus1.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About Us
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="aboutus1.html">About YOHNET</a></li>
+                          <li><a class="dropdown-item" href="aboutus1.html">Our Vision</a></li>
+                          <li><a class="dropdown-item" href="team1.html">YOHNET Team</a></li>
+                          <li><a class="dropdown-item" href="aboutus1.html">YOHNET History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="work1.html">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="new1.html">News & Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="contact1.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-secondary">Get Involved</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <style>
+        .contactimage{
+            height: 25rem;
+            background: #000;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .overlay-image {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+        }
+    </style>
+    <div class="contactimage">
+        <div class="container-fluid" style="height: 25rem;">
+            <div class="overlay-image" style="background-image: url(./photos/contact1.jpeg);"></div>
+        </div>
+    </div>
+    <div class="container-fluid align-content-center">
+        <h1 class="text-center p-5">
+            Contact Us
+        </h1>
+    </div>
+
+
+    <div class="container justify-items-start text-center">
+        <a href=""><i class="bi bi-telephone-fill h3 fw-light text-dark p-5"> +265 9909342257</i></a><br>
+        <a href=""><i class="bi bi-envelope-at h3 fw-light text-dark p-5"> YOHnetMalawi@YOHNET.org</i></a><br>
+        <a href=""><i class="bi bi-facebook h3 fw-light text-dark p-5"> YOHnetMalawi</i></a><br>
+        <a href=""><i class="bi bi-linkedin h3 fw-light text-dark p-5"> YOHNETMalawi@linkedin</i></a><br>
+        <a href=""><i class="bi bi-instagram h3 fw-light text-dark p-5"> YOHNETMw01</i></a><br>
+        <a href=""><i class="bi bi-twitter-x h3 fw-light text-dark p-5"> YOHNETMw011</i></a><br>
+    </div>
+    
+    <div class="text-center"><p><br>
+        Alternatively, you can contact us via the form below.
+        <br><br>
+        Please note that these messages will be checked and responded to Monday – Friday 9am – 5pm. For more urgent queries, please phone us.
+        <br><br>
+        Contact us
+        Fields marked with an <i style="color: red;">*</i> are required
+    </p></div>
+
+    <div class="container p-5">
+        <form>
+            <div class="mb-3">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+                <div id="emailHelp" class="form-text">Enter your name here</div>
+            </div>
+            <div class="mb-3">
+                <label for="InputEmail1" class="form-label">Email address <i style="color: red;">*</i></label>
+                <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message <i style="color: red;">*</i></label>
+                <input type="text" class="form-control" id="message" aria-describedby="messageHelp" required>
+                <div id="messageHelp" class="form-text">Enter your message here.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>        
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <footer class="container-fluid position-relative mt-6" style="height: 15rem; background-color: rgb(40, 41, 104);">
+            <div class="row">
+                <div class="text-end position-absolute top-50">
+                    <a href=""><i class="bi bi-facebook text-white p-2"></i></a>
+                    <a href=""><i class="bi bi-linkedin text-white p-2"></i></a>
+                    <a href=""><i class="bi bi-instagram text-white p-2"></i></a>
+                    <a href=""><i class="bi bi-twitter-x text-white p-2"></i></a>
+                </div>
+                <div class="col-4">
+                    <ul class="navbar-nav m-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold text-light" href="aboutus1.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              About Us
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="aboutus1.html">About YOHNET</a></li>
+                              <li><a class="dropdown-item" href="aboutus1.html">Our Vision</a></li>
+                              <li><a class="dropdown-item" href="team1.html">YOHNET Team</a></li>
+                              <li><a class="dropdown-item" href="aboutus1.html">YOHNET History</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light" href="work1.html">Our Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light" href="new1.html">News & Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light" href="contact1.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="btn btn-secondary">Get Involved</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>YOHNET</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" style="background-color: rgb(40, 41, 104);">
+            <div class="col-8">
+                <h1 class="text-sm-start fs-5 text-white">YOHNET</h1>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <a href=""><i class="bi bi-facebook text-white p-2"></i></a>
+                <a href=""><i class="bi bi-linkedin text-white p-2"></i></a>
+                <a href=""><i class="bi bi-instagram text-white p-2"></i></a>
+                <a href=""><i class="bi bi-twitter-x text-white p-2"></i></a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top bg-light navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./photos/logo.jpeg" alt="logo Here" width="150" height="auto">
+            </a>
+            <!-- button for menu in mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end align-items-center" id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-bold" href="aboutus1.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About Us
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="aboutus1.html">About YOHNET</a></li>
+                          <li><a class="dropdown-item" href="aboutus1.html">Our Vision</a></li>
+                          <li><a class="dropdown-item" href="team1.html">YOHNET Team</a></li>
+                          <li><a class="dropdown-item" href="aboutus1.html">YOHNET History</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="work1.html">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="new1.html">News & Stories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="contact1.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-secondary">Get Involved</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- slideshow -->
+    <section>
+        <style>
+            .carousel-item {
+                height: 32rem;
+                background: #000;
+                color: white;
+                position: relative;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .container {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding-bottom: 50px;
+            }
+
+            .overlay-image {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.5;
+            }
+        </style>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay-image" style="background-image: url(./photos/img1.jpeg);"></div>
+                    <div class="container">
+                        <h1>Child Help</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Sunt nesciunt quasi, corporis tenetur cum libero impedit deserunt illum <br>
+                            quisquam fugit eum! Earum architecto adipisci est, <br>
+                            non sapiente doloribus consequatur eum ut commodi?
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image: url(./photos/img2.jpeg);"></div>
+                    <div class="container">
+                        <h1>Donations</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Sunt nesciunt quasi, corporis tenetur cum libero impedit deserunt illum <br>
+                            quisquam fugit eum! Earum architecto adipisci est, <br>
+                            non sapiente doloribus consequatur eum ut commodi?
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay-image" style="background-image: url(./photos/img5.jpeg);"></div>
+                    <div class="container">
+                        <h1>Our Malawi</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                            Sunt nesciunt quasi, corporis tenetur cum libero impedit deserunt illum <br>
+                            quisquam fugit eum! Earum architecto adipisci est, <br>
+                            non sapiente doloribus consequatur eum ut commodi?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section>
+        <!-- about small -->
+        <div class="home about">
+            <div class="container position-relative mt-5">
+                <h2 class="fw-bold fs-2 text-center" style="color: rgb(40, 41, 104);">YOHNET Malawi</h2>
+                <p class="fw-light fs-6 text-center justify-">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit nisi aspernatur, velit temporibus, veritatis voluptatibus porro necessitatibus quisquam saepe natus possimus officiis vitae fugit eos aperiam voluptatum ea praesentium odio, repudiandae iure impedit optio rem ab perspiciatis. Qui a perferendis quos perspiciatis, maxime atque. Ducimus odit animi optio recusandae reiciendis sint officiis ratione beatae laborum nemo quibusdam voluptatem, cupiditate vitae praesentium dolore ea. Vel dolore similique, cupiditate quo possimus consequuntur nihil dolorem. Iste nostrum ex minus, culpa eaque rem possimus ipsa accusamus autem quae sed odio officia iusto qui cumque eum tenetur fugit officiis pariatur saepe dicta fugiat repellendus facere?
+                </p>
+
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          How YOHNET is Helping
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex neque doloribus consequatur facere minus vitae illo possimus nam sunt assumenda ratione dignissimos debitis doloremque eligendi similique inventore optio voluptates explicabo exercitationem animi vel voluptatem, soluta veniam? Officia nulla labore nesciunt, numquam quia, illum maiores ducimus eligendi consectetur eveniet ut alias!</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                          YOHNET Vision
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae suscipit non dignissimos impedit eos autem quos ducimus numquam ab fugit veniam explicabo sequi alias doloribus voluptates consectetur maxime in, quisquam recusandae totam adipisci similique minus iste. Ea architecto deserunt est! Iure similique sint commodi nulla, molestiae et nemo iusto rem?</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- aid section -->
+    <div class="aidNumbers">
+        <div class="container position-relative mt-5">
+            <h3 class="fs-3 text-center" style="color: rgb(40, 41, 104);">Donations Statistics</h3>
+            <div class="row mt-5">
+                <div class="col-6">
+                    <h4 class="fs-5 text-center">This Month</h4>
+                    <p class="fs-1 fw-light text-center mt-5">K 2,345,000</p>
+                    <p class="fs-6 text-center border-bottom">Donations in Malawi Kwacha(K)</p>
+
+                    <p class="fs-1 fw-light text-center mt-5">45,000</p>
+                    <p class="fs-6 text-center border-bottom">People Reached</p>
+                </div>
+                <div class="col-6">
+                    <h4 class="fs-5 text-center">This Year</h4>
+                    <p class="fs-1 fw-light text-center mt-5">K 52,345,000</p>
+                    <p class="fs-6 text-center border-bottom">Donations in Malawi Kwacha(K)</p>
+
+                    <p class="fs-1 fw-light text-center mt-5">345,000</p>
+                    <p class="fs-6 text-center border-bottom">People Reached</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- news -->
+    <div class="news">
+        <div class="container position-relative mt-5">
+            <h3 class="fs-3 text-center" style="color: rgb(40, 41, 104);">News</h3>
+            <div class="row mt5 justify-content-center gap-3">
+                <div class="card col-4" style="width: 18rem;">
+                    <img src="./photos/img6.jpeg" class="card-img-start" alt="Photo Here">
+                    <div class="card-body">
+                        <h5 class="card-title">Borhelo in Mwendeko</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam accusantium perspiciatis praesentium blanditiis rerum similique expedita eum assumenda doloribus. Quia?</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="card col-4" style="width: 18rem;">
+                    <img src="./photos/img7.jpeg" class="card-img-start" alt="Photo Here">
+                    <div class="card-body">
+                        <h5 class="card-title">Tree Planting Dzaleka</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dicta voluptate inventore ad eius nesciunt quaerat provident fuga quidem neque!</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="card col-4" style="width: 18rem;">
+                    <img src="./photos/img4.jpeg" class="card-img-start" alt="Photo Here">
+                    <div class="card-body">
+                        <h5 class="card-title">Borehole Mwankhupe</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur labore temporibus accusamus dolorum aliquid cupiditate? Doloribus et quod quas ratione?</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <footer class="container-fluid position-relative mt-6" style="height: 15rem; background-color: rgb(40, 41, 104);">
+            <div class="row">
+                <div class="text-end position-absolute top-50">
+                    <a href=""><i class="bi bi-facebook text-white p-2"></i></a>
+                    <a href=""><i class="bi bi-linkedin text-white p-2"></i></a>
+                    <a href=""><i class="bi bi-instagram text-white p-2"></i></a>
+                    <a href=""><i class="bi bi-twitter-x text-white p-2"></i></a>
+                </div>
+                <div class="col-4">
+                    <ul class="navbar-nav m-3">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fw-bold text-light" href="aboutus1.html" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              About Us
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="aboutus1.html">About YOHNET</a></li>
+                              <li><a class="dropdown-item" href="aboutus1.html">Our Vision</a></li>
+                              <li><a class="dropdown-item" href="team1.html">YOHNET Team</a></li>
+                              <li><a class="dropdown-item" href="aboutus1.html">YOHNET History</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light" href="work1.html">Our Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light" href="new1.html">News & Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-light" href="contact1.html">Contact</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <a class="btn btn-secondary">Get Involved</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
